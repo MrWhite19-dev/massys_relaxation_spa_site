@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Demandez votre rendez-vous chez Massy's Relaxation Place & Spa Y4 à Angré, Abidjan via WhatsApp.">
+  <title>Rendez-vous | Massy's Relaxation Place & Spa Y4</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+  <div class="topbar"><div class="container topbar-inner"><span>Angré, Djorobité 2 · Abidjan</span><a href="tel:+2250507719668">05 07 71 96 68</a></div></div>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Massy's Spa, accueil"><span class="brand-mark">M</span><span><strong>Massy's</strong><small>RELAXATION PLACE & SPA Y4</small></span></a><button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button><nav class="main-nav" id="main-nav"><a href="index.html">Accueil</a><a href="service.html">Nos services</a><a class="active" href="rendez-vous.html">Rendez-vous</a><a class="nav-cta" href="#booking-form">Réserver une séance</a></nav></div></header>
+  <main>
+    <section class="page-hero booking-hero"><div class="container page-hero-inner"><span class="eyebrow">VOTRE MOMENT BIEN-ÊTRE</span><h1>Réservez votre<br><em>parenthèse douceur.</em></h1><p>Remplissez le formulaire. Votre demande sera préparée dans WhatsApp pour que vous puissiez nous l'envoyer et confirmer votre rendez-vous.</p><div class="breadcrumb"><a href="index.html">Accueil</a><span>/</span><span>Rendez-vous</span></div></div></section>
+    <section class="booking-section section-pad"><div class="container booking-grid">
+      <div class="booking-aside"><span class="eyebrow">ON S'OCCUPE DE VOUS</span><h2>Votre beauté,<br><em>à votre rythme.</em></h2><p>Indiquez la prestation souhaitée et le créneau qui vous arrange. Nous vous répondrons pour confirmer la disponibilité.</p>
+        <div class="contact-card"><div class="contact-icon">01</div><div><strong>Appelez-nous</strong><a href="tel:+2250507719668">05 07 71 96 68</a></div></div>
+        <div class="contact-card"><div class="contact-icon">02</div><div><strong>Écrivez sur WhatsApp</strong><a href="https://wa.me/2250507719668" target="_blank" rel="noopener">Ouvrir la conversation</a></div></div>
+        <div class="contact-card"><div class="contact-icon">03</div><div><strong>Adresse</strong><span>Djorobité 2, à 200 m de China Mall, Angré, Abidjan</span></div></div>
+        <div class="note-box"><strong>À savoir</strong><p>Les tarifs et créneaux ne sont pas affichés ici car ils doivent être confirmés directement auprès de l'institut.</p></div>
+      </div>
+      <div class="booking-form-card" id="booking-form"><div class="form-heading"><span class="eyebrow">FORMULAIRE DE DEMANDE</span><h2>Préparons votre visite</h2><p>Les champs marqués d'un astérisque sont obligatoires.</p></div>
+        <form id="appointment-form">
+          <div class="form-row"><label for="client-name">Nom complet *</label><input id="client-name" name="name" type="text" placeholder="Votre nom et prénom" required autocomplete="name"></div>
+          <div class="form-row two-cols"><div><label for="client-phone">Votre téléphone *</label><input id="client-phone" name="phone" type="tel" placeholder="Ex. 07 00 00 00 00" required autocomplete="tel"></div><div><label for="client-service">Prestation *</label><select id="client-service" name="service" required><option value="">Choisir une prestation</option><option>Coiffure femme</option><option>Coiffure homme</option><option>Coiffure enfant</option><option>Soin du visage</option><option>Massage bien-être</option><option>Relaxation et spa</option><option>Autre demande</option></select></div></div>
+          <div class="form-row two-cols"><div><label for="appointment-date">Date souhaitée *</label><input id="appointment-date" name="date" type="date" required></div><div><label for="appointment-time">Heure souhaitée *</label><select id="appointment-time" name="time" required><option value="">Choisir une heure</option><option>09:00</option><option>10:00</option><option>11:00</option><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option><option>18:00</option><option>19:00</option><option>20:00</option></select></div></div>
+          <div class="form-row"><label for="client-message">Précisions (facultatif)</label><textarea id="client-message" name="message" rows="4" placeholder="Votre demande ou vos préférences..."></textarea></div>
+          <label class="consent-row"><input type="checkbox" id="confirm-info" required><span>Je vérifie les informations saisies avant de les envoyer sur WhatsApp.</span></label>
+          <button class="btn btn-primary form-submit" type="submit">Envoyer ma demande sur WhatsApp <span>↗</span></button>
+          <p class="form-privacy">Le bouton ouvrira WhatsApp avec un message prérempli. Vous devrez appuyer sur « Envoyer » dans WhatsApp pour transmettre la demande.</p>
+          <p class="form-error" id="form-error" role="alert" aria-live="polite"></p>
+        </form>
+      </div>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-main"><a class="brand brand-footer" href="index.html"><span class="brand-mark">M</span><span><strong>Massy's</strong><small>RELAXATION PLACE & SPA Y4</small></span></a><p>Beauté, sérénité et attention à chaque visite.</p><div class="footer-links"><a href="index.html">Accueil</a><a href="service.html">Nos services</a><a href="rendez-vous.html">Rendez-vous</a></div></div><div class="container footer-bottom"><span>© <span data-year></span> Massy's Relaxation Place & Spa Y4</span><span>Angré · Abidjan</span></div></footer>
+  <a class="whatsapp-float" href="https://wa.me/2250507719668?text=Bonjour%20Massy%27s%2C%20je%20souhaite%20avoir%20des%20informations." target="_blank" rel="noopener" aria-label="Contacter Massy's sur WhatsApp"><span class="wa-symbol">W</span><span>Discuter sur WhatsApp</span></a>
+</body>
+</html>
